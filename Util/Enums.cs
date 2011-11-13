@@ -124,7 +124,7 @@ namespace Berserker
 		public const string PoisonArrow = "poisonarrow";
 		public const string BurstArrow = "burstarrow";
 		public const string PowerBolt = "powerbolt";
-		public const string PowerArrow = "powerarrow"; // TODO: YES YES YES?
+		public const string PowerArrow = "powerarrow"; // TODO: YES YES YES! Power bolt = power arrow (id 1118?)
 	}
 	
 	public enum TextColor : byte

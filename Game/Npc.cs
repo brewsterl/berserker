@@ -258,7 +258,7 @@ namespace Berserker {
         public static void Load() {
             string path = Config.GetDataPath() + Config.GetNPCDirectory();
             FileInfo[] fileList = new DirectoryInfo(path).GetFiles();
-            DynamicCompile dCompile = new DynamicCompile();
+            Compiler dCompile = new Compiler();
             foreach (FileInfo info in fileList) {
                 NPC npc = (NPC)dCompile.Compile(path + info.Name, null);
                 NPCDictionary.Add(npc.Name.ToLower(), npc);

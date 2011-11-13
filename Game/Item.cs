@@ -71,7 +71,7 @@ namespace Berserker {
 
         private static void Compile(Object arg, string path) {
             FileInfo[] fileList = new DirectoryInfo(path).GetFiles();
-            DynamicCompile dCompile = new DynamicCompile();
+            Compiler dCompile = new Compiler();
             foreach (FileInfo info in fileList) {
                 dCompile.Compile(path + info.Name, arg);
             }

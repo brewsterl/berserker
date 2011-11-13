@@ -247,7 +247,7 @@ namespace Berserker {
         public static void Load() {
             string path = Config.GetDataPath() + Config.GetMonsterDirectory();
             FileInfo[] fileList = new DirectoryInfo(path).GetFiles();
-            DynamicCompile dCompile = new DynamicCompile();
+            Compiler dCompile = new Compiler();
             foreach (FileInfo info in fileList) {
                 Monster monster = (Monster)dCompile.Compile(path + info.Name, null);
                 masterDictionary.Add(monster.Name.ToLower(), monster);

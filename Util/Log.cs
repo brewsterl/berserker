@@ -104,7 +104,8 @@ namespace Berserker
 		
 		public static void WriteLine(string text, params object[] args)
 		{
-			Console.WriteLine("{0}: {1}", DateTime.Now, String.Format(text, args));
+			//Console.WriteLine("{0}: {1}", DateTime.Now, String.Format(text, args));
+			Console.WriteLine(text);
 		}
 		
 		private static string RepeatString(string toRepeat, int count)

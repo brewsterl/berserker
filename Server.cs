@@ -78,7 +78,7 @@ namespace Berserker
 			
 			try
 			{
-				DynamicCompile compiler = new DynamicCompile();
+				Compiler compiler = new Compiler();
 				Dictionary<string, string> values = (Dictionary<string, string>) compiler.Compile(configFile, null);
 				
 				Config.Load(values);

@@ -73,7 +73,7 @@ namespace Berserker {
 
         private static void Compile(string path, Dictionary<string, SpellInfo> dict) {
             FileInfo[] fileList = new DirectoryInfo(path).GetFiles();
-            DynamicCompile dCompile = new DynamicCompile();
+            Compiler dCompile = new Compiler();
             foreach (FileInfo info in fileList) {
                 SpellInfo spellInfo = new SpellInfo();
                 dCompile.Compile(path + info.Name, spellInfo);
