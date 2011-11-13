@@ -36,10 +36,6 @@ namespace Berserker
 		private TcpListener listener;
 		
 		// TODO: Move to enums.cs or constants.cs
-		private const ushort ProtoServerOld = 0x0101;
-		private const ushort ProtoServerNew = 0x0201;
-		private const ushort ProtoPlayerOld = 0x0000;
-		private const ushort ProtoPlayerNew = 0x020A;
 		private const string InvalidNameOrPassword = "Invalid username or password.";
 		
 		public void Run(string[] args)

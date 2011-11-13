@@ -22,9 +22,11 @@ using System.IO;
 using System.Data;
 using Mono.Data.Sqlite;
 
-namespace Berserker {
+namespace Berserker
+{
     //TODO: Finish
-    public class Player : Creature {
+    public class Player : Creature
+	{
         //Used for global locking between classes
         private static object lockStatic = new object();
         //Used for sending protocol information to the player

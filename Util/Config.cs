@@ -214,6 +214,11 @@ namespace Berserker {
 			return "players.db";
 		}
 		
+		public static string GetDatabaseSchemaName()
+		{
+			return "players.sql";
+		}
+		
 		// TODO: REMOVE
         /*public static Position GetActManagerTemple() {
             return new Position(32097, 32219, 7);
